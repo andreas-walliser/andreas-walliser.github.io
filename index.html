@@ -52,6 +52,16 @@
       margin-top: 0;
     }
 
+    h3 {
+      color: #1e293b;
+      margin-bottom: 8px;
+    }
+
+    h4 {
+      margin-bottom: 8px;
+      color: #334155;
+    }
+
     ul {
       padding-left: 20px;
     }
@@ -71,18 +81,49 @@
       padding: 30px 20px;
       color: #64748b;
     }
-    
+
     .language-switch {
       text-align: right;
       padding: 15px 25px;
       background: #0f172a;
     }
-  
+
     .language-switch a {
       color: white;
       text-decoration: none;
       font-weight: bold;
       margin: 0 5px;
+    }
+
+    .project-card {
+      border-left: 4px solid #2563eb;
+      padding-left: 18px;
+      margin-top: 15px;
+    }
+
+    .status {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      margin-bottom: 10px;
+    }
+
+    .tags {
+      margin-top: 12px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e2e8f0;
+      color: #334155;
+      padding: 5px 9px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      margin: 3px 4px 3px 0;
     }
   </style>
 
@@ -93,7 +134,7 @@
     <a href="index.html">EN</a> |
     <a href="de.html">DE</a>
   </nav>
-  
+
   <header>
     <h1>Andreas Walliser</h1>
     <p>Mechanical Engineer | Sustainable Energy | Python & Energy Markets</p>
@@ -105,46 +146,73 @@
       <p>
         I hold a B.Eng. in Mechanical Engineering and an M.Sc. in Sustainable Energy Supply.
         I am currently developing my Python and data analysis skills with a focus on energy markets,
-        portfolio management, and energy trading.
+        renewable integration, portfolio management, and energy trading.
       </p>
     </section>
+
+```
+<section>
+  <h2>Featured Project</h2>
+
+  <div class="project-card">
+    <span class="status">Completed</span>
+
+    <h3>German Electricity Market Analysis — Solar PV & Day-Ahead Prices</h3>
+
+    <p>
+      I completed a Python and Jupyter Notebook project analyzing German-Luxembourg day-ahead
+      electricity prices using ENTSO-E data. The project focuses on how solar PV generation affects
+      intraday price patterns, negative price hours, and the market value captured by solar assets.
+    </p>
+
+    <p>
+      The analysis uses ENTSO-E day-ahead price data and solar generation data for the German-Luxembourg
+      bidding zone, with a focus on the merit order effect, negative prices, and solar capture rates.
+    </p>
+
+    <h4>Key findings</h4>
+    <ul>
+      <li>Daytime solar generation became increasingly linked to lower day-ahead prices after the crisis period.</li>
+      <li>Negative price hours became much more common and were mostly concentrated around midday.</li>
+      <li>Solar capture rates weakened after the energy crisis, showing stronger signs of solar cannibalisation.</li>
+      <li>The 2021–2022 energy crisis distorted the usual solar-price relationship because fuel costs dominated price formation.</li>
+    </ul>
+
+    <p>
+      <strong>Tools:</strong> Python, pandas, matplotlib, Jupyter Notebook, ENTSO-E API, entsoe-py
+    </p>
+
+    <div class="tags">
+      <span class="tag">Energy Markets</span>
+      <span class="tag">Python</span>
+      <span class="tag">ENTSO-E</span>
+      <span class="tag">Solar PV</span>
+      <span class="tag">Day-Ahead Prices</span>
+      <span class="tag">Data Analysis</span>
+    </div>
+
+    <p>
+      <a href="https://github.com/andreas-walliser/energy-market-price-analysis" target="_blank" rel="noopener noreferrer">
+        View project on GitHub
+      </a>
+    </p>
+  </div>
+</section>
 
 <section>
   <h2>Current Focus</h2>
   <ul>
-    <li>Python for data analysis</li>
-    <li>Energy market analysis</li>
-    <li>Power price trends</li>
-    <li>Renewable energy integration</li>
+    <li>Python for energy-market data analysis</li>
+    <li>Power price trends and renewable generation patterns</li>
+    <li>Solar and wind integration in electricity markets</li>
     <li>Portfolio optimization concepts</li>
     <li>Energy trading and risk analysis</li>
+    <li>Building a portfolio of energy analytics projects</li>
   </ul>
 </section>
 
 <section>
-  <h2>Projects</h2>
-
-  <h3>Ongoing Projects</h3>
-
-  <h4>Energy Market Price Analysis</h4>
-  <p>
-    A Python and Jupyter Notebook project focused on analyzing electricity market price data.
-    The project is currently in progress and will include basic statistics, price trend visualization,
-    and peak/off-peak analysis.
-  </p>
-
-  <p>
-    <strong>Tools:</strong> Python, pandas, matplotlib, Jupyter Notebook
-  </p>
-
-  <p>
-    <a href="https://github.com/andreas-walliser/energy-market-price-analysis" target="_blank">
-      View project on GitHub
-    </a>
-  </p>
-
-  <h3>Planned Projects</h3>
-
+  <h2>Planned Projects</h2>
   <ul>
     <li>Renewable generation and demand analysis</li>
     <li>Simple energy portfolio optimizer</li>
@@ -152,7 +220,7 @@
     <li>Electricity price forecasting project</li>
   </ul>
 </section>
- 
+
 <section>
   <h2>Career Direction</h2>
   <p>
@@ -165,11 +233,18 @@
   <h2>Links</h2>
   <p>
     GitHub:
-    <a href="https://github.com/andreas-walliser" target="_blank">
+    <a href="https://github.com/andreas-walliser" target="_blank" rel="noopener noreferrer">
       github.com/andreas-walliser
     </a>
   </p>
+  <p>
+    Featured project:
+    <a href="https://github.com/andreas-walliser/energy-market-price-analysis" target="_blank" rel="noopener noreferrer">
+      German Electricity Market Analysis
+    </a>
+  </p>
 </section>
+```
 
   </main>
 
