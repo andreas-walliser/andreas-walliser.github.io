@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Andreas Walliser | Energieanalyse</title>
 
   <style>
@@ -14,23 +13,6 @@
       line-height: 1.6;
       color: #1f2937;
       background: #f8fafc;
-    }
-
-    .language-switch {
-      text-align: right;
-      padding: 15px 25px;
-      background: #0f172a;
-    }
-
-    .language-switch a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0 5px;
-    }
-
-    .language-switch a:hover {
-      text-decoration: underline;
     }
 
     header {
@@ -70,6 +52,16 @@
       margin-top: 0;
     }
 
+    h3 {
+      color: #1e293b;
+      margin-bottom: 8px;
+    }
+
+    h4 {
+      margin-bottom: 8px;
+      color: #334155;
+    }
+
     ul {
       padding-left: 20px;
     }
@@ -88,6 +80,50 @@
       text-align: center;
       padding: 30px 20px;
       color: #64748b;
+    }
+
+    .language-switch {
+      text-align: right;
+      padding: 15px 25px;
+      background: #0f172a;
+    }
+
+    .language-switch a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 5px;
+    }
+
+    .project-card {
+      border-left: 4px solid #2563eb;
+      padding-left: 18px;
+      margin-top: 15px;
+    }
+
+    .status {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      margin-bottom: 10px;
+    }
+
+    .tags {
+      margin-top: 12px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e2e8f0;
+      color: #334155;
+      padding: 5px 9px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      margin: 3px 4px 3px 0;
     }
   </style>
 
@@ -109,60 +145,89 @@
       <h2>Über mich</h2>
       <p>
         Ich habe einen B.Eng. in Maschinenbau und einen M.Sc. in Nachhaltiger Energieversorgung.
-        Derzeit entwickle ich meine Kenntnisse in Python und Datenanalyse mit Fokus auf
-        Energiemärkte, Portfoliomanagement und Energiehandel.
+        Aktuell baue ich meine Python- und Datenanalysekenntnisse mit Fokus auf Energiemärkte,
+        erneuerbare Energien, Portfoliomanagement und Energiehandel weiter aus.
       </p>
     </section>
+
+```
+<section>
+  <h2>Ausgewähltes Projekt</h2>
+
+  <div class="project-card">
+    <span class="status">Abgeschlossen</span>
+
+    <h3>Analyse des deutschen Strommarkts — Solar PV & Day-Ahead-Preise</h3>
+
+    <p>
+      Ich habe ein Python- und Jupyter-Notebook-Projekt abgeschlossen, in dem Day-Ahead-Strompreise
+      in der deutsch-luxemburgischen Gebotszone mit ENTSO-E-Daten analysiert werden. Der Fokus liegt
+      darauf, wie Solar-PV-Erzeugung intraday Preisstrukturen, negative Strompreise und den Marktwert
+      von Solarstrom beeinflusst.
+    </p>
+
+    <p>
+      Die Analyse kombiniert ENTSO-E-Day-Ahead-Preisdaten mit Solarerzeugungsdaten für die
+      Gebotszone Deutschland-Luxemburg. Untersucht werden insbesondere Merit-Order-Effekt,
+      negative Preisstunden und Solar Capture Rates.
+    </p>
+
+    <h4>Zentrale Ergebnisse</h4>
+    <ul>
+      <li>Solarerzeugung am Tag ist nach der Energiekrise zunehmend mit niedrigeren Day-Ahead-Preisen verbunden.</li>
+      <li>Negative Preisstunden sind deutlich häufiger geworden und treten vor allem um die Mittagsstunden auf.</li>
+      <li>Solar Capture Rates haben sich nach der Energiekrise abgeschwächt und zeigen stärkere Hinweise auf Solarkanibalisierung.</li>
+      <li>Die Energiekrise 2021–2022 hat den üblichen Zusammenhang zwischen Solarerzeugung und Strompreisen überlagert, weil Brennstoffkosten die Preisbildung dominierten.</li>
+    </ul>
+
+    <p>
+      <strong>Tools:</strong> Python, pandas, matplotlib, Jupyter Notebook, ENTSO-E API, entsoe-py
+    </p>
+
+    <div class="tags">
+      <span class="tag">Energiemärkte</span>
+      <span class="tag">Python</span>
+      <span class="tag">ENTSO-E</span>
+      <span class="tag">Solar PV</span>
+      <span class="tag">Day-Ahead-Preise</span>
+      <span class="tag">Datenanalyse</span>
+    </div>
+
+    <p>
+      <a href="https://github.com/andreas-walliser/energy-market-price-analysis" target="_blank" rel="noopener noreferrer">
+        Projekt auf GitHub ansehen
+      </a>
+    </p>
+  </div>
+</section>
 
 <section>
   <h2>Aktueller Fokus</h2>
   <ul>
-    <li>Python für Datenanalyse</li>
-    <li>Analyse von Energiemärkten</li>
-    <li>Strompreisentwicklung</li>
-    <li>Integration erneuerbarer Energien</li>
+    <li>Python für Datenanalyse im Energiemarkt</li>
+    <li>Strompreistrends und Erzeugungsmuster erneuerbarer Energien</li>
+    <li>Integration von Solar- und Windenergie in Strommärkte</li>
     <li>Grundlagen der Portfoliooptimierung</li>
     <li>Energiehandel und Risikoanalyse</li>
+    <li>Aufbau eines Portfolios mit Energieanalyse-Projekten</li>
   </ul>
 </section>
 
 <section>
-  <h2>Projekte</h2>
-
-  <h3>Laufende Projekte</h3>
-
-  <h4>Energy Market Price Analysis</h4>
-  <p>
-    Ein Python- und Jupyter-Notebook-Projekt zur Analyse von Strommarktpreisdaten.
-    Das Projekt befindet sich derzeit im Aufbau und soll grundlegende Statistiken,
-    Preisvisualisierungen sowie Peak- und Off-Peak-Analysen enthalten.
-  </p>
-
-  <p>
-    <strong>Tools:</strong> Python, pandas, matplotlib, Jupyter Notebook
-  </p>
-
-  <p>
-    <a href="https://github.com/andreas-walliser/energy-market-price-analysis" target="_blank">
-      Projekt auf GitHub ansehen
-    </a>
-  </p>
-
-  <h3>Geplante Projekte</h3>
-
+  <h2>Geplante Projekte</h2>
   <ul>
     <li>Analyse von erneuerbarer Erzeugung und Stromnachfrage</li>
     <li>Einfacher Energieportfolio-Optimierer</li>
-    <li>Simulation von Batteriespeicher-Arbitrage</li>
+    <li>Simulation von Batterie-Speicher-Trading</li>
     <li>Projekt zur Strompreisprognose</li>
   </ul>
 </section>
 
 <section>
-  <h2>Berufliche Ausrichtung</h2>
+  <h2>Berufliche Richtung</h2>
   <p>
-    Ich interessiere mich für Positionen als Energy Analyst, Portfolio Management Analyst,
-    Energy Trading Analyst, Power Market Analyst oder Data Analyst im Energiesektor.
+    Ich interessiere mich für Rollen wie Energy Analyst, Portfolio Management Analyst,
+    Energy Trading Analyst, Power Market Analyst und Data Analyst im Energiesektor.
   </p>
 </section>
 
@@ -170,11 +235,18 @@
   <h2>Links</h2>
   <p>
     GitHub:
-    <a href="https://github.com/andreas-walliser" target="_blank">
+    <a href="https://github.com/andreas-walliser" target="_blank" rel="noopener noreferrer">
       github.com/andreas-walliser
     </a>
   </p>
+  <p>
+    Ausgewähltes Projekt:
+    <a href="https://github.com/andreas-walliser/energy-market-price-analysis" target="_blank" rel="noopener noreferrer">
+      Analyse des deutschen Strommarkts
+    </a>
+  </p>
 </section>
+```
 
   </main>
 
