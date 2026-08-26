@@ -1,0 +1,474 @@
+/* Prototype A — local About timeline comparison pages */
+.prototype-a.timeline-variation .timeline-comparison {
+  min-width: 0;
+}
+
+.prototype-a.timeline-b .prototype-hero {
+  padding-block: clamp(3.5rem, 6.5vw, 5.5rem);
+}
+
+.prototype-a.timeline-b .hero-title {
+  max-width: none;
+  font-size: clamp(2.6rem, 6.5vw, 5.25rem);
+  letter-spacing: -0.055em;
+  line-height: 0.95;
+  white-space: nowrap;
+}
+
+.prototype-a.timeline-variation .intro-options {
+  margin: 0 0 3.75rem;
+}
+
+.prototype-a.timeline-variation .comparison-label {
+  margin: 0 0 0.85rem;
+  color: var(--a-red);
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.prototype-a.timeline-variation .intro-options-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--a-line);
+  border-bottom: 1px solid var(--a-line);
+}
+
+.prototype-a.timeline-variation .intro-option {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.85rem;
+  align-items: start;
+  min-width: 0;
+  padding: 1.15rem clamp(1rem, 2vw, 1.5rem);
+}
+
+.prototype-a.timeline-variation .intro-option + .intro-option {
+  border-left: 1px solid var(--a-line);
+}
+
+.prototype-a.timeline-variation .intro-option-index {
+  color: var(--a-red);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.55;
+}
+
+.prototype-a.timeline-variation .intro-option p {
+  margin: 0;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+  line-height: 1.55;
+}
+
+.prototype-a.timeline-b .about-copy {
+  max-width: 52rem;
+  margin: 0 0 3.25rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--a-line);
+}
+
+.prototype-a.timeline-b .about-copy p {
+  max-width: 49rem;
+  margin: 0;
+  font-size: clamp(0.98rem, 1.35vw, 1.08rem);
+  line-height: 1.65;
+}
+
+.prototype-a.timeline-b .about-copy p + p {
+  margin-top: 1rem;
+}
+
+.prototype-a.timeline-variation .journey-five {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-top: 0;
+}
+
+.prototype-a.timeline-b .journey-five {
+  grid-template-columns:
+    minmax(5.75rem, 0.65fr)
+    minmax(9.25rem, 1.1fr)
+    minmax(12rem, 1.55fr)
+    minmax(10rem, 1.25fr)
+    minmax(12.25rem, 1.65fr);
+}
+
+.prototype-a.timeline-variation .journey-five li {
+  min-height: 6.75rem;
+  padding-right: clamp(0.75rem, 2vw, 1.75rem);
+}
+
+.prototype-a.timeline-b .journey-five li {
+  display: block;
+  min-height: 0;
+}
+
+.prototype-a.timeline-variation .journey-five .journey-location {
+  margin-bottom: 0.5rem;
+}
+
+.prototype-a.timeline-variation .journey-five .journey-stage {
+  margin-bottom: 0.3rem;
+  font-size: 0.88rem;
+}
+
+.prototype-a.timeline-variation .journey-five .journey-context {
+  font-size: 0.75rem;
+}
+
+.prototype-a.timeline-b .journey-five .journey-location {
+  margin-bottom: 0.5rem;
+}
+
+.prototype-a.timeline-b .journey-five .journey-stage {
+  margin-bottom: 0.3rem;
+}
+
+.prototype-a.timeline-b .journey-nowrap {
+  white-space: nowrap;
+}
+
+.prototype-a.timeline-b .about-facts {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  margin: 2.25rem 0 0;
+  padding: 1.15rem 0 0;
+  border-top: 1px solid var(--a-line);
+}
+
+.prototype-a.timeline-b .about-fact {
+  min-width: 0;
+}
+
+.prototype-a.timeline-b .about-fact dt {
+  margin: 0 0 0.45rem;
+  color: var(--a-muted);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.prototype-a.timeline-b .about-fact dd {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.prototype-a.timeline-b #projects {
+  --project-column-gap: 2rem;
+  --project-primary-column-gap: 2.5rem;
+  --project-content-padding: 2rem;
+  --project-caption-gap: 0.65rem;
+  --project-cta-gap: 1.75rem;
+  --project-meta-padding: 1.5rem;
+}
+
+.prototype-a.timeline-b #projects .project-body {
+  padding-block: var(--project-content-padding);
+}
+
+.prototype-a.timeline-b #projects .project-entry:not(.project-entry-secondary) .project-body {
+  grid-template-columns: minmax(17rem, 2.1fr) minmax(0, 4.4fr);
+  gap: var(--project-primary-column-gap);
+}
+
+.prototype-a.timeline-b #projects .project-entry-secondary .project-body {
+  grid-template-columns: minmax(11.5rem, 1.5fr) minmax(0, 5.5fr);
+  gap: var(--project-column-gap);
+}
+
+.prototype-a.timeline-b #projects .projects-list {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: 2rem;
+  min-width: 0;
+}
+
+.prototype-a.timeline-b #projects .projects-list > .project-entry {
+  grid-column: 1;
+  min-width: 0;
+}
+
+.prototype-a.timeline-b #projects .projects-list > .project-entry + .project-entry {
+  margin-top: 0;
+}
+
+.prototype-a.timeline-b #projects .project-header,
+.prototype-a.timeline-b #projects .project-body,
+.prototype-a.timeline-b #projects .project-meta,
+.prototype-a.timeline-b #projects .project-copy,
+.prototype-a.timeline-b #projects .project-figure,
+.prototype-a.timeline-b #projects .project-figure figcaption {
+  min-width: 0;
+}
+
+.prototype-a.timeline-b #projects .project-header > *,
+.prototype-a.timeline-b #projects .project-body > *,
+.prototype-a.timeline-b #projects .project-meta > * {
+  min-width: 0;
+}
+
+.prototype-a.timeline-b .project-entry-secondary .implementation-list {
+  margin-top: 1.4rem;
+  border-top: 0;
+}
+
+.prototype-a.timeline-b .project-entry-secondary .implementation-list li {
+  position: relative;
+  padding: 0.25rem 0 0.25rem 1rem;
+  border-bottom: 0;
+}
+
+.prototype-a.timeline-b .project-entry-secondary .implementation-list li::before {
+  position: absolute;
+  left: 0;
+  color: var(--a-red);
+  content: "•";
+}
+
+.prototype-a.timeline-b #projects .project-figure {
+  align-self: start;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 0;
+}
+
+.prototype-a.timeline-b #projects .project-figure img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.prototype-a.timeline-b #projects .project-figure figcaption {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  column-gap: 0.5rem;
+  margin: 0;
+  padding-top: var(--project-caption-gap);
+  color: var(--a-muted);
+  font-size: 0.78rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.prototype-a.timeline-b #projects .analysis-link {
+  margin-top: var(--project-cta-gap);
+}
+
+.prototype-a.timeline-b #projects .project-meta {
+  gap: var(--project-column-gap);
+  padding-block: var(--project-meta-padding);
+}
+
+.prototype-a.timeline-b #experience .experience-entry {
+  grid-column: 2;
+  min-width: 0;
+  border-top: 4px solid var(--a-ink);
+}
+
+.prototype-a.timeline-b #experience .experience-header {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(9rem, 2fr);
+  align-items: start;
+  gap: 2rem;
+  padding-block: 1.4rem 2rem;
+  border-bottom: 1px solid var(--a-line);
+}
+
+.prototype-a.timeline-b #experience .experience-company {
+  margin: 0 0 0.85rem;
+  color: var(--a-red);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.prototype-a.timeline-b #experience .experience-role {
+  margin: 0;
+  font-size: clamp(1.5rem, 2.6vw, 2.15rem);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+}
+
+.prototype-a.timeline-b #experience .experience-date {
+  margin: 0;
+  padding-top: 0.1rem;
+  color: var(--a-muted);
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.prototype-a.timeline-b #experience .experience-summary {
+  max-width: 50rem;
+  margin: 0;
+  padding-block: 2rem;
+  color: #3f4445;
+  border-bottom: 1px solid var(--a-line);
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.65;
+}
+
+.prototype-a.timeline-b #experience .experience-areas {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid var(--a-line);
+}
+
+.prototype-a.timeline-b #experience .experience-area {
+  min-width: 0;
+  padding: 1.5rem 2rem 1.75rem 0;
+}
+
+.prototype-a.timeline-b #experience .experience-area + .experience-area {
+  padding-left: 2rem;
+  border-left: 1px solid var(--a-line);
+}
+
+.prototype-a.timeline-b #experience .experience-area dt {
+  margin: 0 0 0.55rem;
+  color: var(--a-red);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.prototype-a.timeline-b #experience .experience-area dd {
+  margin: 0;
+  color: #424748;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 68rem) {
+  .prototype-a.timeline-b .journey-desktop-break {
+    display: none;
+  }
+
+  .prototype-a.timeline-b .journey-five {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+    padding: 0 0 0 1.5rem;
+    border-top: 0;
+    border-left: 1px solid var(--a-line);
+  }
+
+  .prototype-a.timeline-b .journey-five li {
+    display: block;
+    min-height: 0;
+    padding-right: 0;
+  }
+
+  .prototype-a.timeline-b .journey-five li::before {
+    top: 0.2rem;
+    left: calc(-1.5rem - 4px);
+  }
+
+  .prototype-a.timeline-b .journey-five .journey-location {
+    margin-bottom: 0.5rem;
+  }
+
+  .prototype-a.timeline-b .journey-five .journey-stage {
+    margin-bottom: 0.3rem;
+  }
+
+  .prototype-a.timeline-b .about-facts {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 64rem) and (min-width: 48.0625rem) {
+  .prototype-a.timeline-variation #about .section-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 58rem) {
+  .prototype-a.timeline-b #projects .project-entry:not(.project-entry-secondary) .project-body,
+  .prototype-a.timeline-b #projects .project-entry-secondary .project-body {
+    grid-template-columns: 1fr;
+    gap: var(--project-column-gap);
+  }
+
+  .prototype-a.timeline-b #experience .experience-header,
+  .prototype-a.timeline-b #experience .experience-areas {
+    grid-template-columns: 1fr;
+  }
+
+  .prototype-a.timeline-b #experience .experience-header {
+    gap: 1rem;
+  }
+
+  .prototype-a.timeline-b #experience .experience-date {
+    text-align: left;
+  }
+
+  .prototype-a.timeline-b #experience .experience-area {
+    padding: 1.25rem 0;
+  }
+
+  .prototype-a.timeline-b #experience .experience-area + .experience-area {
+    padding-left: 0;
+    border-top: 1px solid var(--a-line);
+    border-left: 0;
+  }
+}
+
+@media (max-width: 48rem) {
+  .prototype-a.timeline-b .about-copy {
+    margin-bottom: 3.25rem;
+  }
+
+  .prototype-a.timeline-variation .intro-options {
+    margin-bottom: 3.25rem;
+  }
+
+  .prototype-a.timeline-variation .intro-options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prototype-a.timeline-variation .intro-option + .intro-option {
+    border-top: 1px solid var(--a-line);
+    border-left: 0;
+  }
+
+  .prototype-a.timeline-variation .journey-five {
+    grid-template-columns: 1fr;
+  }
+
+  .prototype-a.timeline-variation .journey-five li {
+    min-height: 0;
+    padding-right: 0;
+  }
+
+  .prototype-a.timeline-b .about-facts {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+}
+
+@media (max-width: 42rem) {
+  .prototype-a.timeline-b #projects .projects-list {
+    row-gap: 1.75rem;
+  }
+
+  .prototype-a.timeline-b #projects .projects-list,
+  .prototype-a.timeline-b #experience .experience-entry {
+    grid-column: 1;
+  }
+}

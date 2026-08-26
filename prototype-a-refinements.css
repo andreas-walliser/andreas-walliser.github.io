@@ -1,0 +1,98 @@
+/* Prototype A refinements: personal journey and second project */
+.prototype-a .about-story {
+  min-width: 0;
+}
+
+.prototype-a .about-intro {
+  max-width: 48rem;
+  margin: 0;
+  font-size: clamp(1.25rem, 2.4vw, 1.75rem);
+  letter-spacing: -0.025em;
+  line-height: 1.48;
+}
+
+.prototype-a .journey {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  margin: 3.5rem 0 0;
+  padding: 1.4rem 0 0;
+  border-top: 1px solid var(--a-line);
+  list-style: none;
+}
+
+.prototype-a .journey li {
+  position: relative;
+  min-width: 0;
+  padding-right: clamp(1rem, 3vw, 2.5rem);
+}
+
+.prototype-a .journey li::before {
+  position: absolute;
+  top: calc(-1.4rem - 4px);
+  left: 0;
+  width: 7px;
+  height: 7px;
+  background: var(--a-paper);
+  border: 2px solid var(--a-red);
+  content: "";
+}
+
+.prototype-a .journey-location,
+.prototype-a .journey-stage,
+.prototype-a .journey-context {
+  display: block;
+}
+
+.prototype-a .journey-location {
+  margin-bottom: 0.55rem;
+  color: var(--a-red);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.prototype-a .journey-stage {
+  margin-bottom: 0.35rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.prototype-a .journey-context {
+  color: var(--a-muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.prototype-a .project-entry + .project-entry {
+  margin-top: clamp(5rem, 10vw, 8rem);
+}
+
+.prototype-a .dashboard-figure {
+  align-self: center;
+}
+
+.prototype-a .dashboard-figure img {
+  background: #111418;
+}
+
+@media (max-width: 48rem) {
+  .prototype-a .journey {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+    padding: 0 0 0 1.5rem;
+    border-top: 0;
+    border-left: 1px solid var(--a-line);
+  }
+
+  .prototype-a .journey li {
+    padding-right: 0;
+  }
+
+  .prototype-a .journey li::before {
+    top: 0.2rem;
+    left: calc(-1.5rem - 4px);
+  }
+}
