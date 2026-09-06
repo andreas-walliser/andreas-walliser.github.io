@@ -62,11 +62,19 @@
   line-height: 1.55;
 }
 
-.prototype-a.timeline-b .about-copy {
-  max-width: 52rem;
+.prototype-a.timeline-b .about-introduction {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(10rem, 16vw, 13rem);
+  gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: start;
   margin: 0 0 3.25rem;
   padding-top: 1.2rem;
   border-top: 1px solid var(--a-line);
+}
+
+.prototype-a.timeline-b .about-copy {
+  min-width: 0;
+  max-width: 52rem;
 }
 
 .prototype-a.timeline-b .about-copy p {
@@ -78,6 +86,18 @@
 
 .prototype-a.timeline-b .about-copy p + p {
   margin-top: 1rem;
+}
+
+.prototype-a.timeline-b .about-portrait {
+  min-width: 0;
+  margin: 0;
+}
+
+.prototype-a.timeline-b .about-portrait img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .prototype-a.timeline-variation .journey-five {
@@ -429,8 +449,14 @@
 }
 
 @media (max-width: 48rem) {
-  .prototype-a.timeline-b .about-copy {
+  .prototype-a.timeline-b .about-introduction {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.75rem;
     margin-bottom: 3.25rem;
+  }
+
+  .prototype-a.timeline-b .about-portrait {
+    width: min(100%, 12rem);
   }
 
   .prototype-a.timeline-variation .intro-options {
